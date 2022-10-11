@@ -1,8 +1,11 @@
-package com.nhnaacademy.edu.springframework.messagesender;
+package com.nhnacademy.edu.springframework.messagesender;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        new MessageSendService(new SmsMessageSender() , new EmailMessageSender()).doSendMessage();
+//        new MessageSendService(new EmailMessageSender()).doSendMessage();
 
     }
 
